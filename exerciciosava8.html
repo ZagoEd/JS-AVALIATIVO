@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 8</title>
+    <script> 
+        let Calculo = 0;
+        function Calcular(){
+            let X = prompt("Digite um número:");
+            let intX = parseInt(X);
+            Calculo = 0;
+            while(intX > 0){ 
+                Calculo += intX;
+                X = prompt("Digite um número:");
+                intX = parseInt(X);
+            }
+        }
+
+        function Mostrar(idElemento) {
+            const Resultado = "O resultado foi: " + Calculo; 
+            document.getElementById(idElemento).innerHTML = Resultado;
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Teste</h1>
+    <button onclick="Calcular()">Iniciar</button>
+    <button onclick="Mostrar('pTexto')">Mostrar</button>
+    <p id="pTexto" name="pTexto"></p>
+</body>
+</html>

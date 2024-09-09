@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício 6</title>
+</head>
+<body>
+    <div id="div-all">
+        <div id="div-textarea">
+            <textarea id="tTexto" name="tTexto" placeholder="Digite seu texto aqui"></textarea>
+            <br>
+            <label for="iContador">Caracteres Digitados:</label>
+            <input type="text" id="iContador" name="iContador" value="0" readonly>
+            <script>
+                const Texto = document.getElementById('tTexto');
+                const Contador = document.getElementById('iContador');
+
+                Texto.addEventListener('input', function() {
+                const Length = Texto.value.length;
+                Contador.value = Length;
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>

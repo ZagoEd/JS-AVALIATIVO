@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercícios 3</title>
+    <script>
+        function copiar(Escrever, copiar){
+            let Escrever= document.getElementById(iEscrever).value 
+            document.getElementById("pcopiar").innerHTML= nEscrever
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="iEscrever" name="iEscrever" placeholder="Escreva nesse campo">
+    <br>
+    <br>
+    <button onclick="copiar('iEscrever', 'pcopiar')">copiar</button>
+    <br>
+    <br>
+    <div>
+        <p id="pcopiar" name="pcopiar"></p>
+    </div>
+</body>
+</html>

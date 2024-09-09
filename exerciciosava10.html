@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function Enviar(Nome, Telefone, Email, Mensagem, Escrever) {
+
+            let nNome = document.getElementById(Nome).value;
+            let nTelefone = document.getElementById(Telefone).value;
+            let nEmail = document.getElementById(Email).value;
+            let nMensagem = document.getElementById(Mensagem).value;
+            let nData = new Date();
+
+            document.getElementById(Escrever).innerHTML="Enviado em: "+nData+"<br>Emissor: "+nNome+", "+nTelefone+", "+nEmail+"<br>Mensagem: "+nMensagem
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>Nome:</label>
+        <input type="text" id="iNome" name="iNome" placeholder="Digite seu nome aqui!">
+        <br>
+        <label>Telefone:</label>
+        <input type="text" id="iTelefone" name="iTelefone" placeholder="Digite seu numero de telefone aqui!">
+        <br>
+        <label>Email:</label>
+        <input type="text" id="iEmail" name="iEmail" placeholder="Digite seu e-mail aqui!">
+        <br>
+        <textarea id="tMensagem" name="tMensagem"></textarea>
+    </form>
+    <br>
+    <br>
+    <button onclick="Enviar('iNome', 'iTelefone', 'iEmail', 'tMensagem', 'dEscrever')">Enviar</button>
+    <br>
+    <br>
+    <div id="dEscrever" name="dEscrever"></div>
+</body>
+</html>

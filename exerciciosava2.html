@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 2</title>
+    <script>
+        function verificar() {
+            let X = parseInt(document.getElementById("iX").value);
+            let Y = parseInt(document.getElementById("iY").value);
+
+            if(X>Y) {
+            document.getElementById("pVerificar").innerHTML= "o numero "+X+" é maior "
+            }
+        else {
+            document.getElementById("pVerificar").innerHTML= "o numero "+Y+" é maior "
+        }
+
+        }
+    </script>
+</head>
+<body>
+    <label>fale um número</label>
+    <input type="text" id="iX" name="X">
+    <br>
+    <br>
+    <label>informe o segundo número</label>
+    <input type="text" id="iY" name="Y">
+    <br>
+    <br>
+    <button onclick="verificar()">resultado da avialização</button>
+    <br>
+    <br>
+    <p id="pVerificar" name="pVerificar"></p>
+
+</body>
+</html>
